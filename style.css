@@ -1300,97 +1300,98 @@ section h3 {
 }
 
 
-/* ==========================================
+/* =========================
    ABOUT PAGE HERO
-========================================== */
+========================= */
 
 .about-page-hero {
-    min-height: 480px;
-
-    display: flex;
-
-    align-items: center;
-
+    position: relative;
+    overflow: hidden;
     background:
         linear-gradient(
             135deg,
-            var(--navy),
-            var(--navy-light)
+            rgba(7, 26, 51, 0.98),
+            rgba(13, 42, 77, 0.96)
         );
-
-    position: relative;
-
-    overflow: hidden;
-}
-
-.page-hero-content {
-    position: relative;
-
-    z-index: 3;
-}
-
-.about-page-hero h1 {
-    max-width: 850px;
-
-    font-size:
-        clamp(2.8rem, 6vw, 5rem);
-
-    line-height: 1.04;
-
-    letter-spacing: -2px;
-
-    margin:
-        1rem 0 1.5rem;
-
     color: #ffffff;
+    padding: 110px 0 100px;
 }
 
-.about-page-hero h1 span {
-    display: block;
-
-    color: var(--gold-light);
-}
-
-.about-page-hero p {
-    max-width: 760px;
-
-    font-size: 1.08rem;
-
-    line-height: 1.8;
-
-    color: #f1f5f9;
-}
-
-.page-hero-pattern {
+.about-page-hero::before {
+    content: "";
     position: absolute;
-
+    width: 420px;
+    height: 420px;
+    border: 1px solid rgba(240, 204, 99, 0.15);
     border-radius: 50%;
-
+    top: -180px;
+    right: -100px;
     pointer-events: none;
 }
 
-.pattern-one {
-    width: 550px;
-    height: 550px;
-
-    right: -250px;
-    top: -250px;
-
-    border:
-        90px solid rgba(212, 167, 44, 0.07);
+.about-page-hero::after {
+    content: "";
+    position: absolute;
+    width: 280px;
+    height: 280px;
+    border: 1px solid rgba(240, 204, 99, 0.10);
+    border-radius: 50%;
+    bottom: -160px;
+    left: -80px;
+    pointer-events: none;
 }
 
-.pattern-two {
-    width: 300px;
-    height: 300px;
-
-    left: -180px;
-    bottom: -200px;
-
-    border:
-        50px solid rgba(255, 255, 255, 0.04);
+.about-page-hero .container {
+    position: relative;
+    z-index: 5;
 }
 
+.about-page-hero .section-label {
+    position: relative;
+    z-index: 6;
+    display: inline-block;
+    color: #f0cc63 !important;
+    font-weight: 700;
+    letter-spacing: 2px;
+}
+
+.about-page-hero h1 {
+    position: relative;
+    z-index: 6;
+    margin: 18px 0 22px;
+    color: #ffffff !important;
+    font-size: clamp(42px, 6vw, 72px);
+    line-height: 1.05;
+    font-weight: 800;
+    max-width: 850px;
+}
+
+.about-page-hero h1 span {
+    color: #f0cc63 !important;
+}
+
+.about-page-hero p {
+    position: relative;
+    z-index: 6;
+    max-width: 720px;
+    margin: 0;
+    color: #f8fafc !important;
+    font-size: 18px;
+    line-height: 1.8;
+    font-weight: 400;
+}
+
+/* Make sure decorative elements can never cover the text */
+.about-page-hero * {
+    box-sizing: border-box;
+}
+
+.about-page-hero .section-label,
+.about-page-hero h1,
+.about-page-hero p,
+.about-page-hero a {
+    isolation: isolate;
+}
 
 /* ==========================================
    ABOUT MAIN
