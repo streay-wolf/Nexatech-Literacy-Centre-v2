@@ -5,7 +5,29 @@
 
 
 /* ========================================
-   1. GENERAL SETTINGS
+   1. COLOR VARIABLES
+   ======================================== */
+
+:root {
+    --navy: #0B1F3A;
+    --deep-blue: #12345B;
+    --dark-navy: #07162A;
+
+    --gold: #D8AD35;
+    --dark-gold: #A6811E;
+
+    --white: #FFFFFF;
+    --light-bg: #F4F6F8;
+
+    --text: #172121;
+    --muted: #596565;
+
+    --border: #DFE5E3;
+}
+
+
+/* ========================================
+   2. GENERAL SETTINGS
    ======================================== */
 
 * {
@@ -20,9 +42,12 @@ html {
 
 body {
     font-family: "Segoe UI", Arial, sans-serif;
+
     line-height: 1.6;
-    color: #172121;
-    background-color: #f7f8f6;
+
+    color: var(--text);
+
+    background-color: var(--light-bg);
 }
 
 a {
@@ -35,21 +60,25 @@ section {
 
 
 /* ========================================
-   2. HEADER / NAVIGATION
+   3. HEADER / NAVIGATION
    ======================================== */
 
 header {
     position: sticky;
+
     top: 0;
+
     z-index: 1000;
 
     display: flex;
+
     justify-content: space-between;
+
     align-items: center;
 
     padding: 20px 8%;
 
-    background-color: #082b2b;
+    background-color: var(--navy);
 
     box-shadow: 0 2px 12px rgba(0, 0, 0, 0.15);
 }
@@ -59,17 +88,20 @@ header {
 
 .logo {
     font-size: 28px;
+
     font-weight: 700;
+
     letter-spacing: 0.5px;
-    color: #ffffff;
+
+    color: var(--white);
 }
 
 .logo span {
-    color: #ffffff;
+    color: var(--white);
 }
 
 .logo strong {
-    color: #d8ad35;
+    color: var(--gold);
 }
 
 
@@ -77,20 +109,24 @@ header {
 
 nav {
     display: flex;
+
     align-items: center;
+
     gap: 28px;
 }
 
 nav a {
-    color: #ffffff;
+    color: var(--white);
+
     font-size: 15px;
+
     font-weight: 500;
 
     transition: color 0.3s ease;
 }
 
 nav a:hover {
-    color: #d8ad35;
+    color: var(--gold);
 }
 
 
@@ -100,9 +136,11 @@ nav a:hover {
     display: none;
 
     border: none;
+
     background: none;
 
-    color: #ffffff;
+    color: var(--white);
+
     font-size: 28px;
 
     cursor: pointer;
@@ -110,14 +148,16 @@ nav a:hover {
 
 
 /* ========================================
-   3. HERO SECTION
+   4. HERO SECTION
    ======================================== */
 
 .hero {
     min-height: 88vh;
 
     display: flex;
+
     align-items: center;
+
     justify-content: center;
 
     text-align: center;
@@ -126,8 +166,8 @@ nav a:hover {
 
     background:
         linear-gradient(
-            rgba(8, 43, 43, 0.94),
-            rgba(11, 61, 61, 0.96)
+            rgba(11, 31, 58, 0.96),
+            rgba(18, 52, 91, 0.96)
         );
 }
 
@@ -141,9 +181,10 @@ nav a:hover {
 .hero-label {
     margin-bottom: 20px;
 
-    color: #d8ad35;
+    color: var(--gold);
 
     font-size: 13px;
+
     font-weight: 700;
 
     letter-spacing: 2px;
@@ -153,7 +194,7 @@ nav a:hover {
 /* Main heading */
 
 .hero h1 {
-    color: #ffffff;
+    color: var(--white);
 
     font-size: clamp(42px, 6vw, 72px);
 
@@ -164,7 +205,8 @@ nav a:hover {
 
 .hero h1 span {
     display: block;
-    color: #d8ad35;
+
+    color: var(--gold);
 }
 
 
@@ -175,14 +217,14 @@ nav a:hover {
 
     margin: 0 auto 35px;
 
-    color: #e5eeee;
+    color: #E5EEEE;
 
     font-size: 19px;
 }
 
 
 /* ========================================
-   4. BUTTONS
+   5. BUTTONS
    ======================================== */
 
 .hero-buttons {
@@ -202,21 +244,24 @@ nav a:hover {
 
     border-radius: 5px;
 
-    background-color: #d8ad35;
+    background-color: var(--gold);
 
-    color: #082b2b;
+    color: var(--navy);
 
     font-weight: 700;
 
     transition:
         transform 0.3s ease,
-        background-color 0.3s ease;
+        background-color 0.3s ease,
+        color 0.3s ease;
 }
 
 .button:hover {
     transform: translateY(-3px);
 
-    background-color: #ffffff;
+    background-color: var(--white);
+
+    color: var(--navy);
 }
 
 
@@ -225,20 +270,20 @@ nav a:hover {
 .button-outline {
     background-color: transparent;
 
-    border: 2px solid #d8ad35;
+    border: 2px solid var(--gold);
 
-    color: #ffffff;
+    color: var(--white);
 }
 
 .button-outline:hover {
-    background-color: #d8ad35;
+    background-color: var(--gold);
 
-    color: #082b2b;
+    color: var(--navy);
 }
 
 
 /* ========================================
-   5. SECTION HEADINGS
+   6. SECTION HEADINGS
    ======================================== */
 
 .section-heading {
@@ -252,7 +297,7 @@ nav a:hover {
 .section-label {
     margin-bottom: 10px;
 
-    color: #a6811e;
+    color: var(--dark-gold);
 
     font-size: 13px;
 
@@ -262,7 +307,7 @@ nav a:hover {
 }
 
 .section-heading h2 {
-    color: #082b2b;
+    color: var(--navy);
 
     font-size: clamp(32px, 4vw, 48px);
 
@@ -272,22 +317,22 @@ nav a:hover {
 }
 
 .section-heading h2 span {
-    color: #a6811e;
+    color: var(--dark-gold);
 }
 
 .section-heading > p:last-child {
-    color: #596565;
+    color: var(--muted);
 
     font-size: 17px;
 }
 
 
 /* ========================================
-   6. ABOUT SECTION
+   7. ABOUT SECTION
    ======================================== */
 
 .about {
-    background-color: #ffffff;
+    background-color: var(--white);
 }
 
 .about-content {
@@ -297,52 +342,66 @@ nav a:hover {
 
     display: grid;
 
-    grid-template-columns: 1.5fr 1fr;
+    grid-template-columns: 1.2fr 1fr;
 
     gap: 50px;
 
     align-items: center;
 }
 
+
+/* About text */
+
 .about-text p {
     margin-bottom: 20px;
 
-    color: #4d5a5a;
+    color: #4D5A5A;
 
     font-size: 17px;
 }
 
-.about-highlight {
-    padding: 35px;
 
-    background-color: #082b2b;
+/* Vision and Mission */
 
-    border-left: 5px solid #d8ad35;
+.about-details {
+    display: flex;
 
-    border-radius: 6px;
+    flex-direction: column;
 
-    color: #ffffff;
+    gap: 20px;
 }
 
-.about-highlight h3 {
-    margin-bottom: 15px;
+.about-detail {
+    padding: 25px 30px;
 
-    color: #d8ad35;
+    background-color: var(--light-bg);
 
-    font-size: 24px;
+    border-left: 4px solid var(--gold);
+
+    border-radius: 5px;
 }
 
-.about-highlight p {
-    color: #e1e9e9;
+.about-detail h3 {
+    margin-bottom: 10px;
+
+    color: var(--navy);
+
+    font-size: 21px;
+}
+
+.about-detail p {
+    color: var(--muted);
+
+    font-size: 15px;
 }
 
 
 /* ========================================
-   7. PROGRAMMES
+   8. PROGRAMMES
    ======================================== */
 
 .programmes {
-    background-color: #eef3f1;
+    background-color: var(--light-bg);
 }
 
 .programme-container {
@@ -362,11 +421,11 @@ nav a:hover {
 
     padding: 35px 28px;
 
-    background-color: #ffffff;
+    background-color: var(--white);
 
     border-radius: 8px;
 
-    border-top: 4px solid #d8ad35;
+    border-top: 4px solid var(--gold);
 
     box-shadow: 0 6px 20px rgba(0, 0, 0, 0.07);
 
@@ -381,39 +440,30 @@ nav a:hover {
     box-shadow: 0 12px 28px rgba(0, 0, 0, 0.12);
 }
 
-.card-number {
-    margin-bottom: 20px;
 
-    color: #a6811e;
-
-    font-size: 14px;
-
-    font-weight: 700;
-
-    letter-spacing: 1px;
-}
+/* Programme title */
 
 .programme-card h3 {
     margin-bottom: 15px;
 
-    color: #082b2b;
+    color: var(--navy);
 
     font-size: 21px;
 }
 
 .programme-card p {
-    color: #5b6666;
+    color: #5B6666;
 
     font-size: 15px;
 }
 
 
 /* ========================================
-   8. SERVICES
+   9. SERVICES
    ======================================== */
 
 .services {
-    background-color: #ffffff;
+    background-color: var(--white);
 }
 
 .service-list {
@@ -425,7 +475,7 @@ nav a:hover {
 
     grid-template-columns: repeat(2, 1fr);
 
-    border-top: 1px solid #dfe5e3;
+    border-top: 1px solid var(--border);
 }
 
 .service-item {
@@ -437,36 +487,31 @@ nav a:hover {
 
     padding: 25px;
 
-    border-bottom: 1px solid #dfe5e3;
+    border-bottom: 1px solid var(--border);
 
     transition: background-color 0.3s ease;
 }
 
 .service-item:hover {
-    background-color: #f2f5f3;
+    background-color: var(--light-bg);
 }
 
-.service-item span {
-    color: #a6811e;
 
-    font-size: 14px;
-
-    font-weight: 700;
-}
+/* Service title */
 
 .service-item h3 {
-    color: #082b2b;
+    color: var(--navy);
 
     font-size: 18px;
 }
 
 
 /* ========================================
-   9. FACILITIES
+   10. FACILITIES
    ======================================== */
 
 .facilities {
-    background-color: #eef3f1;
+    background-color: var(--light-bg);
 }
 
 .facility-grid {
@@ -484,54 +529,54 @@ nav a:hover {
 .facility-card {
     padding: 35px;
 
-    background-color: #082b2b;
+    background-color: var(--navy);
 
     border-radius: 7px;
 
-    border-bottom: 4px solid #d8ad35;
+    border-bottom: 4px solid var(--gold);
 }
 
 .facility-card h3 {
     margin-bottom: 12px;
 
-    color: #d8ad35;
+    color: var(--gold);
 
     font-size: 22px;
 }
 
 .facility-card p {
-    color: #dce6e5;
+    color: #DCE6E5;
 }
 
 
 /* ========================================
-   10. CONTACT
+   11. CONTACT
    ======================================== */
 
 .contact {
     text-align: center;
 
-    background-color: #082b2b;
+    background-color: var(--navy);
 
-    color: #ffffff;
+    color: var(--white);
 }
 
 .contact .section-heading h2 {
-    color: #ffffff;
+    color: var(--white);
 }
 
 .contact .section-heading h2 span {
-    color: #d8ad35;
+    color: var(--gold);
 }
 
 .contact .section-label {
-    color: #d8ad35;
+    color: var(--gold);
 }
 
 .contact > p {
     margin-bottom: 8px;
 
-    color: #dce6e5;
+    color: #DCE6E5;
 
     font-size: 17px;
 }
@@ -542,7 +587,7 @@ nav a:hover {
 
 
 /* ========================================
-   11. FOOTER
+   12. FOOTER
    ======================================== */
 
 footer {
@@ -550,16 +595,16 @@ footer {
 
     text-align: center;
 
-    background-color: #051e1e;
+    background-color: var(--dark-navy);
 
-    color: #b9c7c6;
+    color: #B9C7C6;
 
     font-size: 14px;
 }
 
 
 /* ========================================
-   12. MOBILE RESPONSIVENESS
+   13. MOBILE RESPONSIVENESS
    ======================================== */
 
 @media (max-width: 800px) {
@@ -567,6 +612,9 @@ footer {
     header {
         padding: 18px 6%;
     }
+
+
+    /* Mobile menu */
 
     #menu-button {
         display: block;
@@ -591,7 +639,7 @@ footer {
 
         padding: 15px 6%;
 
-        background-color: #082b2b;
+        background-color: var(--navy);
     }
 
     nav.show {
@@ -603,9 +651,12 @@ footer {
 
         padding: 12px 0;
 
-        border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+        border-bottom:
+            1px solid rgba(255, 255, 255, 0.1);
     }
 
+
+    /* Hero */
 
     .hero {
         min-height: 80vh;
@@ -622,10 +673,14 @@ footer {
     }
 
 
+    /* Sections */
+
     section {
         padding: 70px 6%;
     }
 
+
+    /* About */
 
     .about-content {
         grid-template-columns: 1fr;
@@ -634,10 +689,14 @@ footer {
     }
 
 
+    /* Services */
+
     .service-list {
         grid-template-columns: 1fr;
     }
 
+
+    /* Facilities */
 
     .facility-grid {
         grid-template-columns: 1fr;
@@ -647,7 +706,7 @@ footer {
 
 
 /* ========================================
-   13. SMALL PHONES
+   14. SMALL PHONES
    ======================================== */
 
 @media (max-width: 480px) {
