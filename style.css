@@ -3,11 +3,6 @@
    GLOBAL STYLESHEET
 ========================================== */
 
-
-/* ==========================================
-   RESET
-========================================== */
-
 * {
     margin: 0;
     padding: 0;
@@ -48,21 +43,21 @@ textarea {
 ========================================== */
 
 :root {
-
     --navy: #071a33;
     --navy-light: #0d2a4d;
     --navy-lighter: #123b68;
 
     --gold: #d4a72c;
-    --gold-light: #e8c45a;
+    --gold-light: #f0cc63;
 
     --white: #ffffff;
     --off-white: #f7f8fa;
 
     --text-dark: #172033;
-    --text-light: #64748b;
+    --text-medium: #334155;
+    --text-light: #526276;
 
-    --border: #e2e8f0;
+    --border: #dbe3ec;
 
     --shadow:
         0 10px 30px rgba(7, 26, 51, 0.10);
@@ -101,15 +96,12 @@ textarea {
 
 .header-container {
     width: min(92%, var(--max-width));
-
     min-height: 76px;
 
     margin: 0 auto;
 
     display: flex;
-
     align-items: center;
-
     justify-content: space-between;
 }
 
@@ -120,13 +112,10 @@ textarea {
 
 .logo {
     font-size: 1.65rem;
-
     font-weight: 800;
-
     letter-spacing: -0.7px;
 
     display: inline-flex;
-
     align-items: center;
 }
 
@@ -135,7 +124,7 @@ textarea {
 }
 
 .logo strong {
-    color: var(--gold);
+    color: var(--gold-light);
 }
 
 
@@ -145,25 +134,21 @@ textarea {
 
 #navigation {
     display: flex;
-
     align-items: center;
-
     gap: 2rem;
 }
 
 #navigation a {
-    color: var(--white);
+    color: #ffffff;
 
     font-size: 0.94rem;
-
     font-weight: 600;
 
     padding: 0.55rem 0;
 
     position: relative;
 
-    transition:
-        color 0.25s ease;
+    transition: color 0.25s ease;
 }
 
 #navigation a::after {
@@ -172,17 +157,14 @@ textarea {
     position: absolute;
 
     left: 0;
-
     bottom: 0;
 
     width: 0;
-
     height: 2px;
 
-    background: var(--gold);
+    background: var(--gold-light);
 
-    transition:
-        width 0.25s ease;
+    transition: width 0.25s ease;
 }
 
 #navigation a:hover,
@@ -222,7 +204,7 @@ textarea {
 .section-label {
     display: inline-block;
 
-    color: var(--gold);
+    color: #b78b16;
 
     font-size: 0.78rem;
 
@@ -231,6 +213,12 @@ textarea {
     letter-spacing: 1.6px;
 
     line-height: 1.4;
+}
+
+.hero .section-label,
+.about-page-hero .section-label,
+.cta-section .section-label {
+    color: var(--gold-light);
 }
 
 
@@ -247,7 +235,6 @@ section h2 {
     color: var(--navy);
 
     margin-top: 0.75rem;
-
     margin-bottom: 1rem;
 
     letter-spacing: -1px;
@@ -268,7 +255,6 @@ section h3 {
     display: inline-flex;
 
     align-items: center;
-
     justify-content: center;
 
     gap: 0.65rem;
@@ -280,7 +266,6 @@ section h3 {
     border: 2px solid transparent;
 
     font-weight: 700;
-
     font-size: 0.94rem;
 
     cursor: pointer;
@@ -308,9 +293,6 @@ section h3 {
 
 .btn-primary:hover {
     background: var(--gold-light);
-
-    box-shadow:
-        0 12px 25px rgba(212, 167, 44, 0.28);
 }
 
 .btn-secondary {
@@ -331,10 +313,10 @@ section h3 {
     color: var(--white);
 
     border-color:
-        rgba(255, 255, 255, 0.45);
+        rgba(255, 255, 255, 0.55);
 
     background:
-        rgba(255, 255, 255, 0.04);
+        rgba(255, 255, 255, 0.05);
 }
 
 .btn-outline-light:hover {
@@ -365,7 +347,6 @@ section h3 {
     min-height: calc(100vh - 76px);
 
     display: flex;
-
     align-items: center;
 
     position: relative;
@@ -381,40 +362,6 @@ section h3 {
         );
 
     color: var(--white);
-}
-
-.hero-background-shape {
-    position: absolute;
-
-    border-radius: 50%;
-
-    pointer-events: none;
-}
-
-.shape-one {
-    width: 500px;
-
-    height: 500px;
-
-    right: -250px;
-
-    top: -220px;
-
-    border:
-        80px solid rgba(212, 167, 44, 0.07);
-}
-
-.shape-two {
-    width: 350px;
-
-    height: 350px;
-
-    left: -210px;
-
-    bottom: -230px;
-
-    border:
-        60px solid rgba(255, 255, 255, 0.035);
 }
 
 .hero-container {
@@ -438,10 +385,6 @@ section h3 {
     padding: 5rem 0;
 }
 
-.hero .section-label {
-    color: var(--gold-light);
-}
-
 .hero h1 {
     max-width: 760px;
 
@@ -454,18 +397,20 @@ section h3 {
 
     margin:
         1.1rem 0 1.5rem;
+
+    color: #ffffff;
 }
 
 .hero h1 span {
     display: block;
 
-    color: var(--gold);
+    color: var(--gold-light);
 }
 
 .hero p {
     max-width: 680px;
 
-    color: #d8e2ed;
+    color: #f1f5f9;
 
     font-size: 1.08rem;
 
@@ -484,7 +429,7 @@ section h3 {
 
 
 /* ==========================================
-   HOMEPAGE HERO VISUAL
+   HERO VISUAL
 ========================================== */
 
 .hero-visual {
@@ -495,7 +440,6 @@ section h3 {
     display: flex;
 
     align-items: center;
-
     justify-content: center;
 }
 
@@ -510,7 +454,6 @@ section h3 {
 
 .orbit-one {
     width: 470px;
-
     height: 470px;
 
     transform:
@@ -520,7 +463,6 @@ section h3 {
 
 .orbit-two {
     width: 370px;
-
     height: 370px;
 
     transform:
@@ -528,7 +470,7 @@ section h3 {
         scaleY(0.62);
 
     border-color:
-        rgba(255, 255, 255, 0.12);
+        rgba(255, 255, 255, 0.16);
 }
 
 .hero-device {
@@ -563,13 +505,12 @@ section h3 {
 
 .device-dot {
     width: 6px;
-
     height: 6px;
 
     border-radius: 50%;
 
     background:
-        rgba(255, 255, 255, 0.35);
+        rgba(255, 255, 255, 0.45);
 }
 
 .device-screen {
@@ -609,7 +550,6 @@ section h3 {
 
 .screen-header span {
     width: 9px;
-
     height: 9px;
 
     border-radius: 50%;
@@ -686,7 +626,7 @@ section h3 {
     padding: 0.9rem 1.1rem;
 
     background:
-        rgba(255, 255, 255, 0.97);
+        rgba(255, 255, 255, 0.98);
 
     color: var(--navy);
 
@@ -698,25 +638,21 @@ section h3 {
 
 .card-top {
     top: 13%;
-
     left: 2%;
 }
 
 .card-bottom {
     right: 0;
-
     bottom: 13%;
 }
 
 .floating-icon {
     width: 42px;
-
     height: 42px;
 
     display: flex;
 
     align-items: center;
-
     justify-content: center;
 
     background:
@@ -731,12 +667,14 @@ section h3 {
     display: block;
 
     font-size: 0.85rem;
+
+    color: var(--navy);
 }
 
 .floating-card small {
     display: block;
 
-    color: var(--text-light);
+    color: #526276;
 
     font-size: 0.72rem;
 
@@ -745,7 +683,7 @@ section h3 {
 
 
 /* ==========================================
-   HOMEPAGE INTRO
+   INTRO
 ========================================== */
 
 .intro-section {
@@ -767,9 +705,6 @@ section h3 {
 
 .intro-heading h2 {
     max-width: 500px;
-
-    font-size:
-        clamp(2.1rem, 4vw, 3.2rem);
 }
 
 .intro-text {
@@ -777,7 +712,7 @@ section h3 {
 }
 
 .intro-text p {
-    color: var(--text-light);
+    color: var(--text-medium);
 
     margin-bottom: 1.1rem;
 
@@ -808,14 +743,14 @@ section h3 {
 }
 
 .text-link:hover {
-    color: var(--gold);
+    color: #a47a0c;
 
     gap: 0.8rem;
 }
 
 
 /* ==========================================
-   HOMEPAGE STATS
+   STATS
 ========================================== */
 
 .stats-section {
@@ -846,28 +781,22 @@ section h3 {
         0.7rem 1rem;
 
     border-right:
-        1px solid rgba(255, 255, 255, 0.12);
-}
-
-.stat-item:last-child {
-    border-right: none;
+        1px solid rgba(255, 255, 255, 0.16);
 }
 
 .stat-icon {
     width: 45px;
-
     height: 45px;
 
     display: flex;
 
     align-items: center;
-
     justify-content: center;
 
     border-radius: 8px;
 
     background:
-        rgba(212, 167, 44, 0.13);
+        rgba(212, 167, 44, 0.15);
 
     font-size: 1.2rem;
 }
@@ -883,7 +812,7 @@ section h3 {
 .stat-item span {
     display: block;
 
-    color: #c9d5e1;
+    color: #e2e8f0;
 
     font-size: 0.78rem;
 }
@@ -919,7 +848,6 @@ section h3 {
 
 .centered-heading h2 {
     margin-left: auto;
-
     margin-right: auto;
 }
 
@@ -979,25 +907,6 @@ section h3 {
         border-color 0.25s ease;
 }
 
-.programme-card::after {
-    content: "";
-
-    position: absolute;
-
-    width: 110px;
-
-    height: 110px;
-
-    right: -55px;
-
-    bottom: -55px;
-
-    border-radius: 50%;
-
-    border:
-        25px solid rgba(212, 167, 44, 0.07);
-}
-
 .programme-card:hover {
     transform: translateY(-7px);
 
@@ -1010,13 +919,11 @@ section h3 {
 
 .programme-icon {
     width: 54px;
-
     height: 54px;
 
     display: flex;
 
     align-items: center;
-
     justify-content: center;
 
     background:
@@ -1033,7 +940,6 @@ section h3 {
     position: absolute;
 
     top: 1.8rem;
-
     right: 1.8rem;
 
     color:
@@ -1053,7 +959,7 @@ section h3 {
 }
 
 .programme-card p {
-    color: var(--text-light);
+    color: var(--text-medium);
 
     font-size: 0.92rem;
 
@@ -1068,14 +974,10 @@ section h3 {
     font-size: 0.85rem;
 
     font-weight: 800;
-
-    position: relative;
-
-    z-index: 2;
 }
 
 .programme-card a:hover {
-    color: var(--gold);
+    color: #a47a0c;
 }
 
 
@@ -1132,13 +1034,11 @@ section h3 {
     flex-shrink: 0;
 
     width: 50px;
-
     height: 50px;
 
     display: flex;
 
     align-items: center;
-
     justify-content: center;
 
     border-radius: 8px;
@@ -1156,7 +1056,7 @@ section h3 {
 }
 
 .service-item p {
-    color: var(--text-light);
+    color: var(--text-medium);
 
     font-size: 0.84rem;
 }
@@ -1186,7 +1086,7 @@ section h3 {
 .facility-preview-text p {
     max-width: 560px;
 
-    color: var(--text-light);
+    color: var(--text-medium);
 
     margin-bottom: 1.8rem;
 }
@@ -1199,7 +1099,6 @@ section h3 {
     display: flex;
 
     align-items: center;
-
     justify-content: center;
 }
 
@@ -1230,13 +1129,12 @@ section h3 {
 
 .window-top span {
     width: 7px;
-
     height: 7px;
 
     border-radius: 50%;
 
     background:
-        rgba(255, 255, 255, 0.35);
+        rgba(255, 255, 255, 0.4);
 }
 
 .window-content {
@@ -1300,11 +1198,9 @@ section h3 {
     position: absolute;
 
     width: 35%;
-
     height: 6px;
 
     left: 10%;
-
     top: 18%;
 
     background: var(--navy);
@@ -1332,7 +1228,6 @@ section h3 {
     position: absolute;
 
     bottom: 3%;
-
     right: 2%;
 
     display: flex;
@@ -1390,10 +1285,6 @@ section h3 {
     gap: 3rem;
 }
 
-.cta-section .section-label {
-    color: var(--gold-light);
-}
-
 .cta-section h2 {
     color: var(--white);
 
@@ -1403,7 +1294,7 @@ section h3 {
 }
 
 .cta-section p {
-    color: #cdd9e5;
+    color: #e2e8f0;
 
     max-width: 620px;
 }
@@ -1450,12 +1341,14 @@ section h3 {
 
     margin:
         1rem 0 1.5rem;
+
+    color: #ffffff;
 }
 
 .about-page-hero h1 span {
     display: block;
 
-    color: var(--gold);
+    color: var(--gold-light);
 }
 
 .about-page-hero p {
@@ -1464,10 +1357,9 @@ section h3 {
     font-size: 1.08rem;
 
     line-height: 1.8;
+
+    color: #f1f5f9;
 }
-
-
-/* About hero decorative pattern */
 
 .page-hero-pattern {
     position: absolute;
@@ -1479,11 +1371,9 @@ section h3 {
 
 .pattern-one {
     width: 550px;
-
     height: 550px;
 
     right: -250px;
-
     top: -250px;
 
     border:
@@ -1492,11 +1382,9 @@ section h3 {
 
 .pattern-two {
     width: 300px;
-
     height: 300px;
 
     left: -180px;
-
     bottom: -200px;
 
     border:
@@ -1505,7 +1393,7 @@ section h3 {
 
 
 /* ==========================================
-   ABOUT MAIN SECTION
+   ABOUT MAIN
 ========================================== */
 
 .about-main-section {
@@ -1530,7 +1418,7 @@ section h3 {
 }
 
 .about-main-text p {
-    color: var(--text-light);
+    color: var(--text-medium);
 
     margin-bottom: 1.2rem;
 
@@ -1550,7 +1438,6 @@ section h3 {
     display: flex;
 
     align-items: center;
-
     justify-content: center;
 }
 
@@ -1581,13 +1468,12 @@ section h3 {
 
 .about-visual-header span {
     width: 7px;
-
     height: 7px;
 
     border-radius: 50%;
 
     background:
-        rgba(255, 255, 255, 0.35);
+        rgba(255, 255, 255, 0.4);
 }
 
 .about-code-area {
@@ -1613,7 +1499,7 @@ section h3 {
     border-radius: 5px;
 
     background:
-        rgba(7, 26, 51, 0.18);
+        rgba(7, 26, 51, 0.22);
 
     margin-bottom: 12px;
 }
@@ -1656,7 +1542,7 @@ section h3 {
     height: 8px;
 
     background:
-        rgba(7, 26, 51, 0.22);
+        rgba(7, 26, 51, 0.25);
 
     border-radius: 4px;
 
@@ -1673,7 +1559,6 @@ section h3 {
     position: absolute;
 
     right: 0;
-
     bottom: 8%;
 
     display: flex;
@@ -1697,13 +1582,11 @@ section h3 {
 
 .about-floating-icon {
     width: 45px;
-
     height: 45px;
 
     display: flex;
 
     align-items: center;
-
     justify-content: center;
 
     background:
@@ -1725,7 +1608,7 @@ section h3 {
 .about-floating-card small {
     display: block;
 
-    color: var(--text-light);
+    color: var(--text-medium);
 
     font-size: 0.73rem;
 }
@@ -1796,11 +1679,9 @@ section h3 {
     position: absolute;
 
     width: 190px;
-
     height: 190px;
 
     right: -80px;
-
     bottom: -100px;
 
     border-radius: 50%;
@@ -1832,18 +1713,16 @@ section h3 {
 }
 
 .mission-card .purpose-card-top > span {
-    color: var(--gold);
+    color: #9a7008;
 }
 
 .purpose-icon {
     width: 45px;
-
     height: 45px;
 
     display: flex;
 
     align-items: center;
-
     justify-content: center;
 
     border-radius: 8px;
@@ -1865,7 +1744,7 @@ section h3 {
 }
 
 .vision-card h3 {
-    color: var(--white);
+    color: #ffffff;
 }
 
 .mission-card h3 {
@@ -1883,11 +1762,11 @@ section h3 {
 }
 
 .vision-card p {
-    color: #cdd9e5;
+    color: #f1f5f9;
 }
 
 .mission-card p {
-    color: var(--text-light);
+    color: var(--text-medium);
 }
 
 
@@ -1919,7 +1798,7 @@ section h3 {
 .why-heading p {
     max-width: 520px;
 
-    color: var(--text-light);
+    color: var(--text-medium);
 
     margin-top: 1.3rem;
 }
@@ -1949,7 +1828,7 @@ section h3 {
 }
 
 .why-number {
-    color: var(--gold);
+    color: #a47a0c;
 
     font-size: 0.85rem;
 
@@ -1965,7 +1844,7 @@ section h3 {
 }
 
 .why-item p {
-    color: var(--text-light);
+    color: var(--text-medium);
 
     font-size: 0.9rem;
 
@@ -2020,13 +1899,11 @@ section h3 {
 
 .value-icon {
     width: 54px;
-
     height: 54px;
 
     display: flex;
 
     align-items: center;
-
     justify-content: center;
 
     border-radius: 9px;
@@ -2046,7 +1923,7 @@ section h3 {
 }
 
 .value-card p {
-    color: var(--text-light);
+    color: var(--text-medium);
 
     font-size: 0.9rem;
 }
@@ -2059,7 +1936,7 @@ section h3 {
 .site-footer {
     background: #041225;
 
-    color: #b8c5d3;
+    color: #cbd5e1;
 
     padding: 3rem 0 1.5rem;
 }
@@ -2078,7 +1955,7 @@ section h3 {
 }
 
 .footer-brand p {
-    color: #8292a4;
+    color: #a7b5c5;
 
     font-size: 0.82rem;
 }
@@ -2098,12 +1975,14 @@ section h3 {
 .footer-links a {
     font-size: 0.82rem;
 
+    color: #d5dee8;
+
     transition:
         color 0.2s ease;
 }
 
 .footer-links a:hover {
-    color: var(--gold);
+    color: var(--gold-light);
 }
 
 .footer-bottom {
@@ -2114,7 +1993,7 @@ section h3 {
     margin-top: 1rem;
 
     border-top:
-        1px solid rgba(255, 255, 255, 0.08);
+        1px solid rgba(255, 255, 255, 0.10);
 
     text-align: center;
 }
@@ -2122,7 +2001,7 @@ section h3 {
 .footer-bottom p {
     font-size: 0.78rem;
 
-    color: #718197;
+    color: #9aaabd;
 }
 
 
@@ -2148,7 +2027,7 @@ section h3 {
 }
 
 .contact-information > p {
-    color: var(--text-light);
+    color: var(--text-medium);
 
     margin-bottom: 2rem;
 }
@@ -2174,13 +2053,11 @@ section h3 {
     flex-shrink: 0;
 
     width: 46px;
-
     height: 46px;
 
     display: flex;
 
     align-items: center;
-
     justify-content: center;
 
     background:
@@ -2196,7 +2073,7 @@ section h3 {
 }
 
 .contact-item p {
-    color: var(--text-light);
+    color: var(--text-medium);
 }
 
 .contact-form {
@@ -2217,7 +2094,7 @@ section h3 {
 }
 
 .form-heading p {
-    color: var(--text-light);
+    color: var(--text-medium);
 }
 
 .form-group {
@@ -2241,7 +2118,7 @@ section h3 {
     padding: 0.9rem 1rem;
 
     border:
-        1px solid var(--border);
+        1px solid #cbd5e1;
 
     border-radius: 6px;
 
@@ -2254,6 +2131,11 @@ section h3 {
     transition:
         border-color 0.2s ease,
         box-shadow 0.2s ease;
+}
+
+.form-group input::placeholder,
+.form-group textarea::placeholder {
+    color: #64748b;
 }
 
 .form-group input:focus,
@@ -2284,7 +2166,7 @@ section h3 {
 
 
 /* ==========================================
-   RESPONSIVE: 1050px
+   RESPONSIVE 1050px
 ========================================== */
 
 @media (max-width: 1050px) {
@@ -2311,21 +2193,18 @@ section h3 {
 
     .orbit-one {
         width: 400px;
-
         height: 400px;
     }
 
     .orbit-two {
         width: 320px;
-
         height: 320px;
     }
-
 }
 
 
 /* ==========================================
-   RESPONSIVE: 950px
+   RESPONSIVE 950px
 ========================================== */
 
 @media (max-width: 950px) {
@@ -2336,20 +2215,11 @@ section h3 {
 
     .intro-grid,
     .facility-preview-content,
-    .about-grid,
     .about-main-grid,
     .why-grid {
         grid-template-columns: 1fr;
 
         gap: 2.5rem;
-    }
-
-    .about-main-text {
-        max-width: 800px;
-    }
-
-    .facility-preview-text {
-        max-width: 700px;
     }
 
     .stats-grid {
@@ -2363,7 +2233,7 @@ section h3 {
 
     .stat-item {
         border-bottom:
-            1px solid rgba(255, 255, 255, 0.12);
+            1px solid rgba(255, 255, 255, 0.14);
 
         padding-bottom: 1rem;
     }
@@ -2392,12 +2262,11 @@ section h3 {
 
         gap: 3rem;
     }
-
 }
 
 
 /* ==========================================
-   RESPONSIVE: 750px
+   RESPONSIVE 750px
 ========================================== */
 
 @media (max-width: 750px) {
@@ -2418,7 +2287,6 @@ section h3 {
         top: 68px;
 
         left: 0;
-
         right: 0;
 
         padding:
@@ -2465,8 +2333,6 @@ section h3 {
     .hero h1 {
         font-size:
             clamp(2.5rem, 12vw, 3.8rem);
-
-        letter-spacing: -1.5px;
     }
 
     .hero p {
@@ -2499,28 +2365,16 @@ section h3 {
 
     .card-top {
         left: 0;
-
         top: 10%;
     }
 
     .card-bottom {
         right: 0;
-
         bottom: 8%;
     }
 
-    .floating-card {
-        padding: 0.7rem 0.85rem;
-    }
 
-    .floating-icon {
-        width: 35px;
-
-        height: 35px;
-    }
-
-
-    /* GENERAL SECTIONS */
+    /* SECTIONS */
 
     .intro-section,
     .programmes-section,
@@ -2551,6 +2405,8 @@ section h3 {
 
     .mobile-section-link {
         display: block;
+
+        margin-top: 2rem;
     }
 
 
@@ -2572,7 +2428,7 @@ section h3 {
     }
 
 
-    /* FACILITY */
+    /* FACILITIES */
 
     .facility-visual {
         min-height: 350px;
@@ -2602,6 +2458,10 @@ section h3 {
             clamp(2.5rem, 11vw, 4rem);
 
         letter-spacing: -1.5px;
+    }
+
+    .about-page-hero p {
+        color: #f1f5f9;
     }
 
     .about-visual {
@@ -2660,12 +2520,11 @@ section h3 {
     .contact-form {
         padding: 1.5rem;
     }
-
 }
 
 
 /* ==========================================
-   RESPONSIVE: 450px
+   RESPONSIVE 450px
 ========================================== */
 
 @media (max-width: 450px) {
@@ -2717,13 +2576,11 @@ section h3 {
 
     .orbit-one {
         width: 300px;
-
         height: 300px;
     }
 
     .orbit-two {
         width: 250px;
-
         height: 250px;
     }
 
@@ -2838,5 +2695,4 @@ section h3 {
     .contact-form {
         padding: 1.5rem;
     }
-
 }
