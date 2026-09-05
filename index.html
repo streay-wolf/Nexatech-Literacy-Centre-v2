@@ -1,76 +1,439 @@
-```html
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <meta name="description"
-        content="NexaTech Computer Literacy and Innovation Centre provides accessible digital skills training, ICT services, programming, artificial intelligence and robotics education.">
-
     <title>NexaTech | Computer Literacy & Innovation Centre</title>
+
+    <meta
+        name="description"
+        content="NexaTech Computer Literacy and Innovation Centre empowers communities through digital skills, technology education, innovation and accessible computer services."
+    >
 
     <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
 
-    <!-- HEADER / NAVIGATION -->
-    <header>
+    <!-- ================= HEADER ================= -->
 
-        <div class="logo">
-            <span>Nexa</span><strong>Tech</strong>
+    <header class="site-header">
+
+        <div class="header-container">
+
+            <a href="index.html" class="logo">
+                <span>Nexa</span><strong>Tech</strong>
+            </a>
+
+            <nav id="navigation" aria-label="Main navigation">
+
+                <a href="index.html" class="active">Home</a>
+
+                <a href="about.html">About</a>
+
+                <a href="programmes.html">Programmes</a>
+
+                <a href="services.html">Services</a>
+
+                <a href="facilities.html">Facilities</a>
+
+                <a href="contact.html">Contact</a>
+
+            </nav>
+
+            <button
+                id="menu-button"
+                type="button"
+                aria-label="Open navigation menu"
+                aria-expanded="false"
+            >
+                ☰
+            </button>
+
         </div>
-
-        <nav id="navigation">
-            <a href="index.html" class="active">Home</a>
-            <a href="about.html">About</a>
-            <a href="programmes.html">Programmes</a>
-            <a href="services.html">Services</a>
-            <a href="facilities.html">Facilities</a>
-            <a href="contact.html">Contact</a>
-        </nav>
-
-        <button id="menu-button" aria-label="Open navigation menu">
-            ☰
-        </button>
 
     </header>
 
 
-    <!-- MAIN CONTENT -->
+    <!-- ================= MAIN ================= -->
+
     <main>
 
-        <!-- HERO -->
-        <section class="hero" id="home">
 
-            <div class="hero-content">
+        <!-- ================= HERO ================= -->
 
-                <p class="hero-label">
-                    COMPUTER LITERACY • INNOVATION • DIGITAL EMPOWERMENT
-                </p>
+        <section class="hero">
 
-                <h1>
-                    Empowering Communities
-                    <span>Through Digital Skills</span>
-                </h1>
+            <div class="hero-background-shape shape-one"></div>
+            <div class="hero-background-shape shape-two"></div>
 
-                <p class="hero-text">
-                    NexaTech Computer Literacy and Innovation Centre
-                    provides accessible digital training and practical
-                    technology skills for education, employment and
-                    entrepreneurship.
-                </p>
+            <div class="container hero-container">
 
-                <div class="hero-buttons">
+                <div class="hero-content">
 
-                    <a href="programmes.html" class="button">
-                        Explore Programmes
+                    <span class="section-label">
+                        COMPUTER LITERACY • INNOVATION • COMMUNITY
+                    </span>
+
+                    <h1>
+                        Empowering Communities
+                        <span>Through Digital Skills</span>
+                    </h1>
+
+                    <p>
+                        NexaTech Computer Literacy and Innovation Centre
+                        equips individuals and communities with practical
+                        digital skills, technology knowledge and opportunities
+                        to create, learn and innovate.
+                    </p>
+
+                    <div class="hero-buttons">
+
+                        <a
+                            href="programmes.html"
+                            class="btn btn-primary"
+                        >
+                            Explore Programmes
+                            <span class="btn-arrow">→</span>
+                        </a>
+
+                        <a
+                            href="about.html"
+                            class="btn btn-outline-light"
+                        >
+                            Learn More
+                        </a>
+
+                    </div>
+
+                </div>
+
+
+                <!-- HERO VISUAL -->
+
+                <div class="hero-visual">
+
+                    <div class="tech-orbit orbit-one"></div>
+                    <div class="tech-orbit orbit-two"></div>
+
+                    <div class="hero-device">
+
+                        <div class="device-top">
+
+                            <span class="device-dot"></span>
+                            <span class="device-dot"></span>
+                            <span class="device-dot"></span>
+
+                        </div>
+
+                        <div class="device-screen">
+
+                            <div class="screen-header">
+                                <span></span>
+                                <span></span>
+                                <span></span>
+                            </div>
+
+                            <div class="screen-content">
+
+                                <div class="screen-line large"></div>
+                                <div class="screen-line"></div>
+                                <div class="screen-line short"></div>
+
+                                <div class="screen-cards">
+
+                                    <div></div>
+                                    <div></div>
+                                    <div></div>
+
+                                </div>
+
+                            </div>
+
+                        </div>
+
+                    </div>
+
+
+                    <div class="floating-card card-top">
+
+                        <span class="floating-icon">💻</span>
+
+                        <div>
+                            <strong>Digital Skills</strong>
+                            <small>Learn • Create • Grow</small>
+                        </div>
+
+                    </div>
+
+
+                    <div class="floating-card card-bottom">
+
+                        <span class="floating-icon">💡</span>
+
+                        <div>
+                            <strong>Innovation</strong>
+                            <small>Ideas into possibilities</small>
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- ================= INTRO ================= -->
+
+        <section class="intro-section">
+
+            <div class="container">
+
+                <div class="intro-grid">
+
+                    <div class="intro-heading">
+
+                        <span class="section-label">
+                            WELCOME TO NEXATECH
+                        </span>
+
+                        <h2>
+                            Building Digital Confidence,
+                            One Skill at a Time.
+                        </h2>
+
+                    </div>
+
+                    <div class="intro-text">
+
+                        <p>
+                            Technology is changing how people learn, work,
+                            communicate and solve problems. NexaTech exists
+                            to make sure communities are not left behind.
+                        </p>
+
+                        <p>
+                            We provide practical computer literacy,
+                            digital productivity, programming, artificial
+                            intelligence and innovation opportunities in
+                            an accessible learning environment.
+                        </p>
+
+                        <a
+                            href="about.html"
+                            class="text-link"
+                        >
+                            Discover NexaTech
+                            <span>→</span>
+                        </a>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- ================= STATS ================= -->
+
+        <section class="stats-section">
+
+            <div class="container stats-grid">
+
+                <div class="stat-item">
+
+                    <div class="stat-icon">
+                        💻
+                    </div>
+
+                    <div>
+                        <strong>Digital</strong>
+                        <span>Skills Training</span>
+                    </div>
+
+                </div>
+
+
+                <div class="stat-item">
+
+                    <div class="stat-icon">
+                        🚀
+                    </div>
+
+                    <div>
+                        <strong>Innovation</strong>
+                        <span>Focused Learning</span>
+                    </div>
+
+                </div>
+
+
+                <div class="stat-item">
+
+                    <div class="stat-icon">
+                        👥
+                    </div>
+
+                    <div>
+                        <strong>Community</strong>
+                        <span>Driven Development</span>
+                    </div>
+
+                </div>
+
+
+                <div class="stat-item">
+
+                    <div class="stat-icon">
+                        🌐
+                    </div>
+
+                    <div>
+                        <strong>Digital</strong>
+                        <span>Access & Inclusion</span>
+                    </div>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- ================= PROGRAMMES ================= -->
+
+        <section class="programmes-section">
+
+            <div class="container">
+
+                <div class="section-heading">
+
+                    <div>
+
+                        <span class="section-label">
+                            WHAT WE TEACH
+                        </span>
+
+                        <h2>
+                            Programmes Designed for the Digital World
+                        </h2>
+
+                    </div>
+
+                    <a
+                        href="programmes.html"
+                        class="text-link desktop-link"
+                    >
+                        View All Programmes
+                        <span>→</span>
                     </a>
 
-                    <a href="about.html" class="button button-outline">
-                        Learn More
+                </div>
+
+
+                <div class="programmes-grid">
+
+
+                    <!-- PROGRAMME 1 -->
+
+                    <article class="programme-card">
+
+                        <div class="programme-icon">
+                            💻
+                        </div>
+
+                        <span class="card-number">
+                            01
+                        </span>
+
+                        <h3>
+                            Computer Literacy
+                        </h3>
+
+                        <p>
+                            Build essential computer skills and develop
+                            confidence in using digital devices and
+                            everyday technology.
+                        </p>
+
+                        <a href="programmes.html">
+                            Learn more →
+                        </a>
+
+                    </article>
+
+
+                    <!-- PROGRAMME 2 -->
+
+                    <article class="programme-card">
+
+                        <div class="programme-icon">
+                            📊
+                        </div>
+
+                        <span class="card-number">
+                            02
+                        </span>
+
+                        <h3>
+                            Digital Productivity
+                        </h3>
+
+                        <p>
+                            Learn practical tools for documents,
+                            spreadsheets, presentations, communication
+                            and efficient digital work.
+                        </p>
+
+                        <a href="programmes.html">
+                            Learn more →
+                        </a>
+
+                    </article>
+
+
+                    <!-- PROGRAMME 3 -->
+
+                    <article class="programme-card">
+
+                        <div class="programme-icon">
+                            💻
+                        </div>
+
+                        <span class="card-number">
+                            03
+                        </span>
+
+                        <h3>
+                            Programming & Web
+                        </h3>
+
+                        <p>
+                            Explore programming concepts and learn how
+                            websites and digital applications are built.
+                        </p>
+
+                        <a href="programmes.html">
+                            Learn more →
+                        </a>
+
+                    </article>
+
+                </div>
+
+
+                <div class="mobile-section-link">
+
+                    <a
+                        href="programmes.html"
+                        class="btn btn-secondary"
+                    >
+                        View All Programmes
                     </a>
 
                 </div>
@@ -80,41 +443,133 @@
         </section>
 
 
-        <!-- INTRODUCTION -->
-        <section class="about">
+        <!-- ================= SERVICES ================= -->
 
-            <div class="section-heading">
+        <section class="services-section">
 
-                <p class="section-label">
-                    WELCOME TO NEXATECH
-                </p>
+            <div class="container">
 
-                <h2>
-                    Building Digital Confidence
-                    <span>for the Future</span>
-                </h2>
+                <div class="section-heading">
 
-            </div>
+                    <div>
 
-            <div class="about-content">
+                        <span class="section-label">
+                            TECHNOLOGY SERVICES
+                        </span>
 
-                <div class="about-text">
+                        <h2>
+                            Practical Services for Everyday Needs
+                        </h2>
 
-                    <p>
-                        NexaTech is a community-based computer literacy
-                        and innovation centre designed to bridge the
-                        digital skills gap within rural communities.
-                    </p>
+                    </div>
 
-                    <p>
-                        We provide practical training in computer
-                        literacy, digital productivity, programming,
-                        artificial intelligence and robotics while also
-                        offering essential ICT services to the community.
-                    </p>
+                    <a
+                        href="services.html"
+                        class="text-link desktop-link"
+                    >
+                        View All Services
+                        <span>→</span>
+                    </a>
 
-                    <a href="about.html" class="button">
-                        Discover NexaTech
+                </div>
+
+
+                <div class="services-grid">
+
+
+                    <div class="service-item">
+
+                        <div class="service-icon">
+                            🖨️
+                        </div>
+
+                        <div>
+
+                            <h3>
+                                Printing
+                            </h3>
+
+                            <p>
+                                Convenient document printing services.
+                            </p>
+
+                        </div>
+
+                    </div>
+
+
+                    <div class="service-item">
+
+                        <div class="service-icon">
+                            📄
+                        </div>
+
+                        <div>
+
+                            <h3>
+                                Photocopying
+                            </h3>
+
+                            <p>
+                                Reliable document duplication services.
+                            </p>
+
+                        </div>
+
+                    </div>
+
+
+                    <div class="service-item">
+
+                        <div class="service-icon">
+                            📑
+                        </div>
+
+                        <div>
+
+                            <h3>
+                                Scanning
+                            </h3>
+
+                            <p>
+                                Convert physical documents into digital files.
+                            </p>
+
+                        </div>
+
+                    </div>
+
+
+                    <div class="service-item">
+
+                        <div class="service-icon">
+                            ⌨️
+                        </div>
+
+                        <div>
+
+                            <h3>
+                                Typing & Formatting
+                            </h3>
+
+                            <p>
+                                Professional document preparation support.
+                            </p>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+
+                <div class="mobile-section-link">
+
+                    <a
+                        href="services.html"
+                        class="btn btn-secondary"
+                    >
+                        View All Services
                     </a>
 
                 </div>
@@ -124,108 +579,130 @@
         </section>
 
 
-        <!-- PROGRAMME PREVIEW -->
-        <section class="programmes">
+        <!-- ================= FACILITIES ================= -->
 
-            <div class="section-heading">
+        <section class="facilities-preview">
 
-                <p class="section-label">
-                    WHAT WE TEACH
-                </p>
+            <div class="container">
 
-                <h2>
-                    Learn Skills
-                    <span>That Matter</span>
-                </h2>
+                <div class="facility-preview-content">
 
-                <p>
-                    Practical digital skills designed for education,
-                    employment and entrepreneurship.
-                </p>
+                    <div class="facility-preview-text">
 
-            </div>
+                        <span class="section-label">
+                            OUR ENVIRONMENT
+                        </span>
 
-            <div class="programme-container">
+                        <h2>
+                            A Space Built for Learning & Innovation
+                        </h2>
 
-                <div class="programme-card">
-                    <h3>Computer Literacy</h3>
-                    <p>
-                        Build essential computer skills, internet
-                        knowledge, email communication and digital
-                        confidence.
-                    </p>
+                        <p>
+                            NexaTech brings learning, technology and
+                            creativity together in an environment designed
+                            to support practical digital development.
+                        </p>
+
+                        <a
+                            href="facilities.html"
+                            class="btn btn-primary"
+                        >
+                            Explore Our Facilities
+                            <span class="btn-arrow">→</span>
+                        </a>
+
+                    </div>
+
+
+                    <div class="facility-visual">
+
+                        <div class="facility-window">
+
+                            <div class="window-top">
+
+                                <span></span>
+                                <span></span>
+                                <span></span>
+
+                            </div>
+
+                            <div class="window-content">
+
+                                <div class="workspace-column">
+
+                                    <div class="workspace-monitor"></div>
+
+                                    <div class="workspace-desk"></div>
+
+                                </div>
+
+                                <div class="workspace-column">
+
+                                    <div class="workspace-monitor"></div>
+
+                                    <div class="workspace-desk"></div>
+
+                                </div>
+
+                            </div>
+
+                        </div>
+
+
+                        <div class="facility-badge">
+
+                            <strong>
+                                Learn.
+                            </strong>
+
+                            <strong>
+                                Build.
+                            </strong>
+
+                            <strong>
+                                Innovate.
+                            </strong>
+
+                        </div>
+
+                    </div>
+
                 </div>
-
-                <div class="programme-card">
-                    <h3>Digital Productivity</h3>
-                    <p>
-                        Develop practical skills in Microsoft Office,
-                        Google Workspace, online research and digital
-                        communication.
-                    </p>
-                </div>
-
-                <div class="programme-card">
-                    <h3>Programming & Web</h3>
-                    <p>
-                        Learn the foundations of Python, HTML, CSS and
-                        JavaScript through practical projects.
-                    </p>
-                </div>
-
-            </div>
-
-            <div class="hero-buttons">
-
-                <a href="programmes.html" class="button">
-                    View All Programmes
-                </a>
 
             </div>
 
         </section>
 
 
-        <!-- SERVICES PREVIEW -->
-        <section class="services">
+        <!-- ================= CTA ================= -->
 
-            <div class="section-heading">
+        <section class="cta-section">
 
-                <p class="section-label">
-                    ICT SERVICES
-                </p>
+            <div class="container cta-content">
 
-                <h2>
-                    Technology
-                    <span>Within Reach</span>
-                </h2>
+                <div>
 
-            </div>
+                    <span class="section-label">
+                        START YOUR DIGITAL JOURNEY
+                    </span>
 
-            <div class="service-list">
+                    <h2>
+                        Ready to Learn, Create and Innovate?
+                    </h2>
 
-                <div class="service-item">
-                    <h3>Printing</h3>
+                    <p>
+                        Connect with NexaTech and discover opportunities
+                        to build practical digital skills.
+                    </p>
+
                 </div>
 
-                <div class="service-item">
-                    <h3>Photocopying</h3>
-                </div>
-
-                <div class="service-item">
-                    <h3>Scanning</h3>
-                </div>
-
-                <div class="service-item">
-                    <h3>Internet Access</h3>
-                </div>
-
-            </div>
-
-            <div class="hero-buttons">
-
-                <a href="services.html" class="button">
-                    View All Services
+                <a
+                    href="contact.html"
+                    class="btn btn-primary"
+                >
+                    Contact NexaTech
+                    <span class="btn-arrow">→</span>
                 </a>
 
             </div>
@@ -235,14 +712,53 @@
     </main>
 
 
-    <!-- FOOTER -->
-    <footer>
+    <!-- ================= FOOTER ================= -->
 
-        <p>
-            © <span id="year"></span>
-            NexaTech Computer Literacy and Innovation Centre.
-            All rights reserved.
-        </p>
+    <footer class="site-footer">
+
+        <div class="container footer-content">
+
+            <div class="footer-brand">
+
+                <a href="index.html" class="logo">
+                    <span>Nexa</span><strong>Tech</strong>
+                </a>
+
+                <p>
+                    Computer Literacy and Innovation Centre
+                </p>
+
+            </div>
+
+
+            <div class="footer-links">
+
+                <a href="index.html">Home</a>
+
+                <a href="about.html">About</a>
+
+                <a href="programmes.html">Programmes</a>
+
+                <a href="services.html">Services</a>
+
+                <a href="facilities.html">Facilities</a>
+
+                <a href="contact.html">Contact</a>
+
+            </div>
+
+
+            <div class="footer-bottom">
+
+                <p>
+                    © <span id="year"></span>
+                    NexaTech Computer Literacy and Innovation Centre.
+                    All rights reserved.
+                </p>
+
+            </div>
+
+        </div>
 
     </footer>
 
@@ -250,6 +766,4 @@
     <script src="script.js"></script>
 
 </body>
-
 </html>
-```
