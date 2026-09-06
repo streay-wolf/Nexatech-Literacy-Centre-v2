@@ -1,114 +1,114 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
     <meta name="description"
         content="Explore ICT services offered by NexaTech Computer Literacy and Innovation Centre.">
-
     <title>Services | NexaTech</title>
-
     <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
+    <header class="site-header">
+        <div class="header-container">
+            <a href="index.html" class="logo">
+                <span>Nexa</span><strong>Tech</strong>
+            </a>
 
-    <!-- HEADER / NAVIGATION -->
-    <header>
+            <nav id="navigation" aria-label="Main navigation">
+                <a href="index.html">Home</a>
+                <a href="about.html">About</a>
+                <a href="programmes.html">Programmes</a>
+                <a href="services.html" class="active">Services</a>
+                <a href="facilities.html">Facilities</a>
+                <a href="contact.html">Contact</a>
+            </nav>
 
-        <div class="logo">
-            <span>Nexa</span><strong>Tech</strong>
+            <button id="menu-button" aria-label="Open navigation menu" aria-expanded="false" type="button">
+                ☰
+            </button>
         </div>
-
-        <nav id="navigation">
-            <a href="index.html">Home</a>
-            <a href="about.html">About</a>
-            <a href="programmes.html">Programmes</a>
-            <a href="services.html" class="active">Services</a>
-            <a href="facilities.html">Facilities</a>
-            <a href="contact.html">Contact</a>
-        </nav>
-
-        <button id="menu-button" aria-label="Open navigation menu">
-            ☰
-        </button>
-
     </header>
 
-
     <main>
-
         <section class="services">
+            <div class="container">
+                <div class="section-heading">
+                    <p class="section-label">ICT SERVICES</p>
 
-            <div class="section-heading">
+                    <h1>
+                        Technology
+                        <span>Within Reach</span>
+                    </h1>
 
-                <p class="section-label">
-                    ICT SERVICES
-                </p>
+                    <p>
+                        Accessible technology services designed to support
+                        students, job seekers, entrepreneurs and the wider
+                        community.
+                    </p>
+                </div>
 
-                <h1>
-                    Technology
-                    <span>Within Reach</span>
-                </h1>
+                <div class="service-list">
 
-                <p>
-                    Accessible technology services designed to support
-                    students, job seekers, entrepreneurs and the wider
-                    community.
-                </p>
+                    <article class="service-item">
+                        <div class="service-card-icon">🖨️</div>
+                        <h2>Printing</h2>
+                        <p>Convenient printing support for academic, professional and personal documents.</p>
+                        <span class="service-action">Document Support</span>
+                    </article>
 
+                    <article class="service-item">
+                        <div class="service-card-icon">📄</div>
+                        <h2>Photocopying</h2>
+                        <p>Quick photocopying services for notes, forms, records and other documents.</p>
+                        <span class="service-action">Document Support</span>
+                    </article>
+
+                    <article class="service-item">
+                        <div class="service-card-icon">📑</div>
+                        <h2>Scanning</h2>
+                        <p>Convert physical documents into digital files for storage, sharing and submission.</p>
+                        <span class="service-action">Digital Support</span>
+                    </article>
+
+                    <article class="service-item">
+                        <div class="service-card-icon">⌨️</div>
+                        <h2>Typing &amp; Document Formatting</h2>
+                        <p>Professional support with typing, layout, formatting and document preparation.</p>
+                        <span class="service-action">Productivity Support</span>
+                    </article>
+
+                    <article class="service-item">
+                        <div class="service-card-icon">🌐</div>
+                        <h2>Internet Access</h2>
+                        <p>Access online resources for research, applications, communication and learning.</p>
+                        <span class="service-action">Digital Access</span>
+                    </article>
+
+                    <article class="service-item">
+                        <div class="service-card-icon">📋</div>
+                        <h2>CV &amp; Cover Letter Support</h2>
+                        <p>Practical assistance with creating clear, professional job application documents.</p>
+                        <span class="service-action">Career Support</span>
+                    </article>
+
+                </div>
             </div>
-
-
-            <div class="service-list">
-
-                <div class="service-item">
-                    <h2>Printing</h2>
-                </div>
-
-                <div class="service-item">
-                    <h2>Photocopying</h2>
-                </div>
-
-                <div class="service-item">
-                    <h2>Scanning</h2>
-                </div>
-
-                <div class="service-item">
-                    <h2>Typing & Document Formatting</h2>
-                </div>
-
-                <div class="service-item">
-                    <h2>Internet Access</h2>
-                </div>
-
-                <div class="service-item">
-                    <h2>CV & Cover Letter Support</h2>
-                </div>
-
-            </div>
-
         </section>
-
     </main>
 
-
-    <footer>
-
-        <p>
-            © <span id="year"></span>
-            NexaTech Computer Literacy and Innovation Centre.
-            All rights reserved.
-        </p>
-
+    <footer class="site-footer">
+        <div class="container">
+            <p>
+                © <span id="year"></span>
+                NexaTech Computer Literacy and Innovation Centre.
+                All rights reserved.
+            </p>
+        </div>
     </footer>
-
 
     <script src="script.js"></script>
 
 </body>
-
 </html>
-```
